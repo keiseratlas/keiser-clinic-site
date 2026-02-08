@@ -77,3 +77,4 @@ Add to `<head>` in both HTML files:
 - CSS/JS/images cached for 1 year via Netlify headers
 - HTML cached with must-revalidate for instant updates
 - Security headers enabled (X-Frame-Options, XSS Protection, etc.)
+
