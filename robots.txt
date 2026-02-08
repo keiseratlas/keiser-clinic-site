@@ -1,11 +1,8 @@
 # Robots.txt for The Keiser Clinic
-# https://keiserclinic.com
+# https://keiserclinic.netlify.app
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://keiserclinic.com/sitemap.xml
-
-# Crawl-delay for polite crawling
-Crawl-delay: 1
+Sitemap: https://keiserclinic.netlify.app/sitemap.xml
