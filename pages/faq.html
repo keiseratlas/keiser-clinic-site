@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about The Keiser Clinic, our approach, insurance, travel, and what to expect during treatment.">
+    <meta property="og:title" content="FAQ | The Keiser Clinic">
+    <meta property="og:description" content="Common questions about insurance, travel, costs, and what to expect at The Keiser Clinic.">
+    <meta property="og:image" content="../images/team-photo.jpg">
+    <meta property="og:type" content="website">
+    <title>FAQ | The Keiser Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <style>
+        .faq-section {
+            margin-bottom: 60px;
+        }
+        .faq-section h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--gold);
+        }
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 25px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: var(--black);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 24px;
+            color: var(--gold);
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            color: var(--gray);
+            font-size: 17px;
+            line-height: 1.7;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding-top: 0;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding-top: 12px;
+        }
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+    </style>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const item = this.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Close all other items in same section
+                item.parentElement.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    });
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="The Keiser Clinic">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="how-it-works.html">How This Works</a>
+                <a href="blog.html">Blog</a>
+                <a href="faq.html">FAQ</a>
+                <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="nav-cta" target="_blank">Schedule a Consultation</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: auto; padding: 160px 0 80px;">
+        <div class="container">
+            <div class="hero-text" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1>Frequently Asked <span>Questions</span></h1>
+                <p class="hero-description" style="max-width: 600px; margin: 0 auto;">Answers to the questions we hear most often from patients considering care at The Keiser Clinic.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section style="padding: 40px 0 100px;">
+        <div class="container" style="max-width: 800px;">
+
+            <!-- Getting Started -->
+            <div class="faq-section">
+                <h2>Getting Started</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Is the consultation call really free?</div>
+                    <div class="faq-answer">Yes. The initial 15-minute call is completely free with no obligation. You'll speak directly with one of our physicians — not a salesperson or scheduler. We use this call to understand your situation and determine if our approach is likely to help.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do I need a referral from my doctor?</div>
+                    <div class="faq-answer">No. You can book directly without a referral. However, we will request your relevant medical records so we can review what testing has already been done and avoid duplicating work unnecessarily.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I know if you can help me?</div>
+                    <div class="faq-answer">That's exactly what the consultation call is for. We'll ask about your symptoms, what you've tried, and what hasn't worked. Based on that conversation, we'll tell you honestly whether your pattern matches what we treat. If we don't think we can help, we'll say so.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What conditions do you treat?</div>
+                    <div class="faq-answer">We specialize in complex neurological conditions including POTS and dysautonomia, post-concussion syndrome, vestibular disorders (dizziness, vertigo, balance problems), chronic migraines, movement disorders, and neurodevelopmental conditions. Our approach is particularly effective for cases that haven't responded to standard treatment.</div>
+                </div>
+            </div>
+
+            <!-- Insurance & Cost -->
+            <div class="faq-section">
+                <h2>Insurance & Cost</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do you accept insurance?</div>
+                    <div class="faq-answer">We are out of network for most insurance plans. This is intentional — we've chosen this model because we don't want your care limited by what insurance allows. Insurance typically pays for 15-minute visits and standard tests. Finding your mechanism requires more time and specialized equipment. We'd rather do the testing that actually finds answers.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I use my HSA or FSA?</div>
+                    <div class="faq-answer">Yes. Our services are eligible for HSA and FSA funds. Many patients use these accounts to cover their care.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do you provide superbills for reimbursement?</div>
+                    <div class="faq-answer">Yes. We provide detailed superbills that you can submit to your insurance for potential out-of-network reimbursement. Coverage varies by plan — we recommend checking with your insurance about your out-of-network benefits before your visit.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How much does treatment cost?</div>
+                    <div class="faq-answer">Cost depends on what testing you need and what treatment is recommended based on your findings. We discuss investment on the consultation call once we understand your situation. We're transparent about costs — if budget is a concern, we'll address it directly.</div>
+                </div>
+            </div>
+
+            <!-- Travel & Logistics -->
+            <div class="faq-section">
+                <h2>Travel & Logistics</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">I don't live in Michigan. Can you help me remotely?</div>
+                    <div class="faq-answer">The initial evaluation requires in-person testing. Transcranial Doppler, VNG, oculomotor assessment, and other diagnostic tests can't be done remotely. Some follow-up care can be conducted via telehealth, but we need to see you in person first to accurately diagnose your condition.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How long will I need to be in Michigan?</div>
+                    <div class="faq-answer">Initial evaluation typically takes 1-2 days. If you proceed with treatment, the duration depends on your specific needs — some patients benefit from intensive programs lasting 1-2 weeks, while others do better with less intensive, periodic visits. We'll discuss what makes sense for your situation.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do you help with travel arrangements?</div>
+                    <div class="faq-answer">Our patient care coordinator can help you plan logistics. We work with patients from across the country and internationally — we're experienced in making the process as smooth as possible. We can recommend nearby accommodations and help coordinate your visit schedule.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Where exactly are you located?</div>
+                    <div class="faq-answer">We're located in Chelsea, Michigan — about 15 miles west of Ann Arbor and approximately 60 miles from Detroit Metro Airport (DTW). The area has several hotel options for out-of-town patients.</div>
+                </div>
+            </div>
+
+            <!-- Treatment & Results -->
+            <div class="faq-section">
+                <h2>Treatment & Results</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">What if you can't help me?</div>
+                    <div class="faq-answer">We'll tell you. We have no interest in taking patients we can't help. If our approach isn't right for your situation, we'll explain why and suggest alternatives if we can. We'd rather be honest upfront than waste your time and money.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How long until I see results?</div>
+                    <div class="faq-answer">It depends on your condition and how long you've been symptomatic. Some patients notice improvement within days of starting treatment. Others require weeks or months of consistent work. During your report of findings, we'll give you realistic expectations based on your specific situation.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">I've already seen POTS specialists. Why would this be different?</div>
+                    <div class="faq-answer">Most POTS treatment focuses on the same lever: blood volume and vascular tone. If that's not your mechanism, those treatments won't resolve the problem. We test for mechanisms that standard POTS workups don't assess — neurovascular function, neurological processing, vestibular contributions, and structural factors.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Will I need to stop my current medications?</div>
+                    <div class="faq-answer">Not necessarily. We'll review your current medications and discuss whether any adjustments might be helpful. We never recommend stopping medications without coordination with your prescribing physician. Our goal is to address the underlying mechanism so you may eventually need less medication — but that's a decision made carefully over time.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do you guarantee results?</div>
+                    <div class="faq-answer">No ethical medical provider can guarantee results. What we can guarantee is that we'll conduct a thorough evaluation, give you an honest assessment, and only recommend treatment if we genuinely believe it will help. We track outcomes and can share realistic expectations based on patients with similar presentations.</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Still Have Questions?</h2>
+            <p>Book a free consultation call with one of our physicians. We're happy to answer any questions about your specific situation.</p>
+            <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="cta-button" target="_blank">
+                Schedule Your Free Call
+                <img src="../images/cta-arrow.png" alt="">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/logo.png" alt="The Keiser Clinic">
+                    <p>The Keiser Clinic provides advanced neurological care for complex conditions. We combine diagnostic precision with evidence-based treatment to help patients find answers and get better.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html">How This Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Conditions</h4>
+                    <ul>
+                        <li><a href="pots.html">POTS & Dysautonomia</a></li>
+                        <li><a href="services.html">Post-Concussion</a></li>
+                        <li><a href="services.html">Vestibular Disorders</a></li>
+                        <li><a href="services.html">Migraines</a></li>
+                        <li><a href="services.html">Balance Problems</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links footer-contact">
+                    <h4>Contact</h4>
+                    <p>Chelsea, Michigan</p>
+                    <p>Patients from 48 states and 9 countries</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/thekeiserclinic" target="_blank" rel="noopener">
+                            <img src="../images/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://youtube.com/@dockeiser" target="_blank" rel="noopener">
+                            <img src="../images/youtube.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Keiser Clinic. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

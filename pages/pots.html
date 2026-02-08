@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diagnosed with POTS but still symptomatic? Standard treatment targets blood volume, but that may not be your mechanism. The Keiser Clinic finds WHY your POTS is happening and treats the actual cause.">
+    <meta name="keywords" content="POTS treatment, POTS specialist, dysautonomia treatment, postural orthostatic tachycardia syndrome, POTS doctor, functional neurology POTS">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="POTS Treatment That Actually Works | The Keiser Clinic">
+    <meta property="og:description" content="Your POTS diagnosis told you WHAT. We find WHY. Salt and compression keep you functional, but you're not better. We find the mechanism driving your POTS.">
+    <meta property="og:image" content="../images/htw-tilt.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keiserclinic.com/pages/pots.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="POTS Treatment That Actually Works">
+    <meta name="twitter:description" content="Diagnosed with POTS but still symptomatic? We find the mechanism driving your symptoms.">
+
+    <title>POTS Treatment That Actually Works | The Keiser Clinic</title>
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="canonical" href="https://keiserclinic.com/pages/pots.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --gold: #E4BE74;
+            --gold-dark: #C9A55F;
+            --gold-light: #F5E6C8;
+            --black: #1a1a1a;
+            --gray: #555;
+            --light-gray: #f8f8f8;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.7;
+            color: var(--black);
+            background: var(--white);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* Top Banner */
+        .banner {
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 14px 20px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .banner span { color: var(--gold); }
+
+        /* Hero */
+        .hero {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 800;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+        }
+        .hero h1 span { color: var(--gold-dark); }
+        .hero .subhead {
+            font-size: 22px;
+            color: var(--gray);
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .video-container {
+            background: var(--black);
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 50px 0;
+            aspect-ratio: 16/9;
+            position: relative;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .video-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            background: var(--black);
+        }
+
+        /* CTA Button */
+        .cta {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--black);
+            padding: 20px 48px;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .cta:hover {
+            background: var(--gold-dark);
+            transform: translateY(-2px);
+        }
+        .cta-note {
+            font-size: 14px;
+            color: var(--gray);
+            margin-top: 12px;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        section.dark {
+            background: var(--black);
+            color: var(--white);
+        }
+        section.light {
+            background: var(--light-gray);
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-size: 24px;
+            margin: 30px 0 15px;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        ul {
+            margin: 20px 0 20px 25px;
+            font-size: 18px;
+        }
+        li {
+            margin-bottom: 12px;
+        }
+
+        /* Two columns */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .col {
+            background: var(--white);
+            padding: 35px;
+            border-radius: 8px;
+        }
+        .col.for {
+            border-top: 4px solid var(--gold);
+        }
+        .col.not {
+            border-top: 4px solid var(--black);
+        }
+        .col h3 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .col ul {
+            margin-bottom: 0;
+        }
+
+        /* Mechanism Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+            margin: 50px 0;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 35px;
+            border-radius: 8px;
+        }
+        .card-num {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--black);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .card h3 {
+            color: var(--gold);
+            margin: 0 0 15px;
+            font-size: 20px;
+        }
+        .card p {
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Steps */
+        .steps {
+            margin: 50px 0;
+        }
+        .step {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 35px;
+            align-items: flex-start;
+        }
+        .step-num {
+            background: var(--gold);
+            color: var(--black);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        .step-content h3 {
+            margin: 0 0 10px;
+        }
+        .step-content p {
+            margin: 0;
+            color: var(--gray);
+        }
+
+        /* Quotes */
+        .quotes {
+            display: grid;
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .quote {
+            background: var(--white);
+            padding: 35px;
+            border-radius: 8px;
+            border-left: 4px solid var(--gold);
+        }
+        .quote p {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        .quote-author {
+            font-style: normal;
+            font-weight: 600;
+            color: var(--gray);
+            font-size: 15px;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 30px 0;
+        }
+        .faq-item:first-child {
+            border-top: 1px solid #e0e0e0;
+        }
+        .faq-q {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+        .faq-a {
+            color: var(--gray);
+            font-size: 17px;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .final-cta h2 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+        .final-cta p {
+            color: rgba(255,255,255,0.8);
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-size: 20px;
+        }
+
+        /* Callout box */
+        .callout {
+            background: var(--gold-light);
+            border-left: 4px solid var(--gold);
+            padding: 30px;
+            border-radius: 0 8px 8px 0;
+            margin: 40px 0;
+        }
+        .callout p {
+            margin: 0;
+            font-size: 17px;
+        }
+        .callout strong {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--black);
+            color: rgba(255,255,255,0.6);
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 14px;
+        }
+        footer strong {
+            color: var(--white);
+            font-family: 'Montserrat', sans-serif;
+        }
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .hero .subhead { font-size: 18px; }
+            h2 { font-size: 30px; }
+            .two-col, .cards { grid-template-columns: 1fr; }
+            .cta { padding: 18px 36px; font-size: 16px; }
+            section { padding: 60px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- TOP BANNER -->
+<div class="banner">
+    The Keiser Clinic sees patients from <span>40+ states and 9 countries</span>. If you're ready to find answers, keep reading.
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Your POTS Diagnosis Told You <span>What</span>.<br>We Find <span>Why</span>.</h1>
+    <p class="subhead">Salt, water, and compression keep you functional. But you're still not better. That's because nobody found the mechanism driving your POTS. We do.</p>
+
+    <div class="video-container">
+        <!-- Replace VIDEO_ID with your YouTube video ID (e.g., af_bZlNc1Tg) -->
+        <!-- Example: https://www.youtube.com/watch?v=VIDEO_ID -->
+        <iframe
+            src="https://www.youtube.com/embed/af_bZlNc1Tg?rel=0&modestbranding=1"
+            title="POTS Treatment - The Keiser Clinic"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="cta">I'm Ready to Get Better</a>
+    <p class="cta-note">Free 15-minute call with a Keiser Clinic physician</p>
+</section>
+
+<!-- WHO THIS IS FOR -->
+<section class="light">
+    <div class="container">
+        <h2 style="text-align: center;">Is This Call For You?</h2>
+
+        <div class="two-col">
+            <div class="col for">
+                <h3>This Is For You If:</h3>
+                <ul>
+                    <li>You've been diagnosed with POTS but treatment isn't working</li>
+                    <li>You're functional but not getting better — or you can't work or go to school because symptoms are so severe</li>
+                    <li>You've been told there's nothing anyone can do for you</li>
+                    <li>You've seen cardiologists, neurologists, and specialists with no real answers</li>
+                    <li>You're tired of being told to "manage" when you want to recover</li>
+                    <li>You're willing to travel for care that actually works</li>
+                    <li>You don't want your care limited by what insurance allows</li>
+                </ul>
+            </div>
+
+            <div class="col not">
+                <h3>This Is NOT For You If:</h3>
+                <ul>
+                    <li>You're not open to traveling for evaluation</li>
+                    <li>You're looking for a quick fix or magic pill</li>
+                    <li>Your symptoms are well-controlled with current treatment</li>
+                    <li>You want someone to confirm that nothing can be done</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="cta">I'm Ready to Get Better</a>
+        </div>
+    </div>
+</section>
+
+<!-- THE PROBLEM -->
+<section>
+    <div class="container">
+        <h2>Why You're Still Sick After Being Diagnosed</h2>
+
+        <p>You did everything right. You found a doctor who recognized POTS. You got the diagnosis. You started the protocol — salt tablets, compression stockings, fluids, maybe midodrine or a beta blocker.</p>
+
+        <p>And maybe it helped. Maybe it didn't. Either way, you're not better.</p>
+
+        <p><strong>Here's what nobody told you:</strong></p>
+
+        <p><strong>POTS is a description, not an explanation.</strong></p>
+
+        <p>It tells you your heart rate goes up when you stand. It doesn't tell you <em>why</em>. And there are multiple reasons why that happens — each requiring completely different treatment.</p>
+
+        <p>Standard POTS treatment leans heavily on one lever: blood volume. More salt, more fluids, medications that manipulate fluid retention or vascular tone. It's the most commonly targeted mechanism — whether or not it's actually your problem.</p>
+
+        <p>For some patients, blood volume is the issue, and these interventions work. For others, they're treating a mechanism that isn't broken — while the actual cause goes unaddressed.</p>
+
+        <p><strong>That's why you're still symptomatic. The lever everyone keeps pulling may not be your lever.</strong></p>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="cta">I'm Ready to Get Better</a>
+        </div>
+    </div>
+</section>
+
+<!-- OUR APPROACH -->
+<section class="dark">
+    <div class="container">
+        <h2 style="text-align: center;">We Test What Others Don't</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; color: rgba(255,255,255,0.8);">At The Keiser Clinic, we don't just confirm your POTS diagnosis. We go looking for the mechanism that's actually driving your symptoms.</p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-num">1</div>
+                <h3>Neurovascular Function</h3>
+                <p>We measure actual blood flow to your brain — not just heart rate. Using transcranial Doppler, we watch blood velocity in real time as you change positions. We assess how your autonomic system regulates vascular tone and whether your blood vessels respond appropriately to demands.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-num">2</div>
+                <h3>Neurological Processing</h3>
+                <p>Your vestibular system, cerebellar timing, and oculomotor control all directly affect autonomic function. If your brain is misinterpreting signals or miscalibrating responses, your heart rate will respond to threats that don't exist. We test these systems specifically.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-num">3</div>
+                <h3>Structural Contributors</h3>
+                <p>Cervical instability, positional compression, and musculoskeletal irritation can all affect blood flow and autonomic signaling. Standard imaging done lying still misses these. We use dynamic testing to see what happens when you actually move.</p>
+            </div>
+        </div>
+
+        <p style="text-align: center; font-size: 20px; color: var(--gold); margin-top: 30px;"><strong>We don't assume we know your mechanism.<br>We test until we find it.</strong></p>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="cta">I'm Ready to Get Better</a>
+        </div>
+    </div>
+</section>
+
+<!-- WHAT HAPPENS ON THE CALL -->
+<section>
+    <div class="container">
+        <h2>What Happens On Your Call</h2>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                    <h3>We Hear Your Story</h3>
+                    <p>You'll talk directly to a Keiser Clinic physician — not a scheduler, not a salesperson. We want to understand your symptoms, how long you've had them, what you've tried, and what hasn't worked.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                    <h3>We Assess Your Situation</h3>
+                    <p>Based on your history and symptom pattern, we'll tell you honestly whether our approach is likely to help. If we don't think we can, we'll say so — and point you toward resources that might.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                    <h3>We Explain Next Steps</h3>
+                    <p>If it looks like a good match, we'll walk you through what evaluation involves: the tests we run, what we're looking for, and realistic expectations for what's possible.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="callout">
+            <p><strong>This is not a sales call.</strong> We'd rather tell you "no" than have you invest time and money in an approach that won't help your specific situation. If we're not the right fit, we'll tell you directly.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="cta">I'm Ready to Get Better</a>
+        </div>
+    </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="light">
+    <div class="container">
+        <h2 style="text-align: center;">What Our Patients Say</h2>
+
+        <div class="quotes">
+            <div class="quote">
+                <p>"I was diagnosed with POTS three years ago. Salt, fluids, compression — I did it all. Still couldn't work. The Keiser Clinic found that my blood flow was dropping 35% when I stood up, and my cerebellum wasn't calibrating the response. Eight weeks of targeted treatment and I'm back at my job."</p>
+                <div class="quote-author">— Sarah, Teacher, Ohio</div>
+            </div>
+
+            <div class="quote">
+                <p>"Four cardiologists told me to drink more water. Turns out my vestibular system was triggering a false alarm every time I stood up. My heart was responding to a threat that didn't exist. Once we fixed that, my heart rate normalized on its own."</p>
+                <div class="quote-author">— Michael, Software Engineer, Texas</div>
+            </div>
+
+            <div class="quote">
+                <p>"I flew from California expecting nothing — I'd tried everything. They found my mechanism in one visit: cervical instability affecting blood flow. No one had ever looked at my neck. Six months later, I'm off half my medications."</p>
+                <div class="quote-author">— Jennifer, Mom of 3, California</div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="cta">I'm Ready to Get Better</a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section>
+    <div class="container">
+        <h2>Common Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-q">Is this call really free?</div>
+            <div class="faq-a">Yes. It's 15 minutes with one of our physicians. No cost, no obligation. We use it to determine if our approach matches your situation.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Do I need a referral?</div>
+            <div class="faq-a">No. You can book directly.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Do you accept insurance?</div>
+            <div class="faq-a">We're out of network for most insurance. Many patients use HSA/FSA funds, and we provide superbills for potential reimbursement. We've chosen this model because we don't want your care limited by what insurance allows.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">I can't travel. Can you help me remotely?</div>
+            <div class="faq-a">The initial evaluation requires in-person testing (transcranial Doppler, VNG, oculomotor assessment). Some follow-up can be done remotely, but we need to see you in person first. If traveling isn't an option, we're likely not the right fit right now.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">How much does treatment cost?</div>
+            <div class="faq-a">It depends on what testing reveals and what treatment you need. We discuss investment on the call once we understand your situation. We're transparent — if cost is a concern, we'll address it directly.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">I've already seen POTS specialists. Why would this be different?</div>
+            <div class="faq-a">Most POTS treatment focuses on the same lever: blood volume and vascular tone. If that's not your mechanism, those treatments won't resolve the problem. We test for mechanisms that standard POTS workups don't assess — neurovascular function, neurological processing, and structural contributors.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">What if you can't help me?</div>
+            <div class="faq-a">We'll tell you. We have no interest in taking patients we can't help. If our approach isn't right for your situation, we'll explain why and suggest alternatives if we can.</div>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+    <h2>You've Managed Long Enough.</h2>
+    <p>Salt and compression keep you upright. But you want your life back. The difference is finding why your POTS is happening — not just that it is.</p>
+    <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="cta">I'm Ready to Get Better</a>
+    <p class="cta-note" style="color: rgba(255,255,255,0.6);">Free 15-minute call with a Keiser Clinic physician</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p><a href="../index.html" style="color: var(--gold);"><strong>The Keiser Clinic</strong></a></p>
+    <p style="margin-top: 8px;">
+        <a href="https://youtube.com/@dockeiser" target="_blank">YouTube</a> &nbsp;|&nbsp;
+        <a href="https://instagram.com/thekeiserclinic" target="_blank">Instagram</a> &nbsp;|&nbsp;
+        <a href="../index.html">Main Site</a>
+    </p>
+</footer>
+
+</body>
+</html>

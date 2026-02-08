@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Keiser Clinic treats complex neurological conditions including POTS, dysautonomia, post-concussion syndrome, vestibular disorders, migraines, and more.">
+    <meta property="og:title" content="Conditions We Treat | The Keiser Clinic">
+    <meta property="og:description" content="We treat complex neurological conditions: POTS, dysautonomia, post-concussion, vestibular disorders, migraines, and more.">
+    <meta property="og:image" content="../images/htw-exam.jpg">
+    <meta property="og:type" content="website">
+    <title>Conditions We Treat | The Keiser Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <style>
+        .service-detail {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+            align-items: start;
+            padding: 60px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .service-detail:last-child {
+            border-bottom: none;
+        }
+        .service-detail.reverse {
+            grid-template-columns: 1.5fr 1fr;
+        }
+        .service-detail.reverse .service-image {
+            order: 2;
+        }
+        .service-image img {
+            border-radius: 12px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .service-text h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--black);
+        }
+        .service-text p {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+        .service-text ul {
+            margin: 20px 0 20px 20px;
+        }
+        .service-text li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold-dark);
+            font-weight: 600;
+            font-family: var(--font-heading);
+            margin-top: 15px;
+        }
+        @media (max-width: 768px) {
+            .service-detail, .service-detail.reverse {
+                grid-template-columns: 1fr;
+            }
+            .service-detail.reverse .service-image {
+                order: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="The Keiser Clinic">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="how-it-works.html">How This Works</a>
+                <a href="blog.html">Blog</a>
+                <a href="faq.html">FAQ</a>
+                <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="nav-cta" target="_blank">Schedule a Consultation</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: auto; padding: 160px 0 80px;">
+        <div class="container">
+            <div class="hero-text" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1>Conditions <span>We Treat</span></h1>
+                <p class="hero-description" style="max-width: 600px; margin: 0 auto;">We specialize in complex neurological conditions that others struggle to diagnose and treat effectively.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services List -->
+    <section style="padding: 40px 0 100px;">
+        <div class="container">
+
+            <!-- POTS & Dysautonomia -->
+            <div class="service-detail">
+                <div class="service-image">
+                    <img src="../images/service-dysautonomia.jpg" alt="POTS & Dysautonomia Treatment">
+                </div>
+                <div class="service-text">
+                    <h3>POTS & Dysautonomia</h3>
+                    <p>Postural Orthostatic Tachycardia Syndrome and other forms of dysautonomia involve dysfunction of the autonomic nervous system. Standard treatment focuses on blood volume — but that's only one of several possible mechanisms.</p>
+                    <p>We test for the actual cause of your autonomic dysfunction:</p>
+                    <ul>
+                        <li>Neurovascular function via transcranial Doppler</li>
+                        <li>Vestibular and cerebellar contributions to autonomic control</li>
+                        <li>Structural issues affecting blood flow or nerve signaling</li>
+                    </ul>
+                    <p>Once we identify your specific mechanism, we can target treatment appropriately — not just manage symptoms.</p>
+                    <a href="pots.html" class="service-link">Learn more about our POTS approach <img src="../images/sm-arrow.svg" alt=""></a>
+                </div>
+            </div>
+
+            <!-- Post-Concussion -->
+            <div class="service-detail reverse">
+                <div class="service-image">
+                    <img src="../images/service-brain-injury.jpg" alt="Post-Concussion Treatment">
+                </div>
+                <div class="service-text">
+                    <h3>Post-Concussion Syndrome</h3>
+                    <p>Concussion symptoms that persist beyond the expected recovery window indicate that something in the brain isn't healing correctly. Standard advice to "rest and wait" doesn't address the underlying dysfunction.</p>
+                    <p>We assess:</p>
+                    <ul>
+                        <li>Oculomotor function and eye movement control</li>
+                        <li>Vestibular processing and balance systems</li>
+                        <li>Cerebellar timing and coordination</li>
+                        <li>Cervical spine contribution to symptoms</li>
+                    </ul>
+                    <p>Targeted neurological rehabilitation can restore function that rest alone cannot.</p>
+                </div>
+            </div>
+
+            <!-- Vestibular -->
+            <div class="service-detail">
+                <div class="service-image">
+                    <img src="../images/service-balance.jpg" alt="Vestibular Disorder Treatment">
+                </div>
+                <div class="service-text">
+                    <h3>Vestibular Disorders</h3>
+                    <p>Dizziness, vertigo, and imbalance often stem from vestibular system dysfunction — but "vestibular disorder" is a broad category with many possible causes.</p>
+                    <p>We use comprehensive vestibular testing including:</p>
+                    <ul>
+                        <li>Videonystagmography (VNG)</li>
+                        <li>Rotary chair testing</li>
+                        <li>Computerized dynamic posturography</li>
+                        <li>Oculomotor and gaze stability assessment</li>
+                    </ul>
+                    <p>This allows us to identify exactly which component of your vestibular system is affected and design targeted rehabilitation.</p>
+                </div>
+            </div>
+
+            <!-- Migraines -->
+            <div class="service-detail reverse">
+                <div class="service-image">
+                    <img src="../images/service-migraine.jpg" alt="Migraine Treatment">
+                </div>
+                <div class="service-text">
+                    <h3>Migraines & Chronic Headaches</h3>
+                    <p>Migraines are often treated purely as a pain management problem. But migraine is a neurological event — and understanding the neurological triggers can open new treatment pathways.</p>
+                    <p>We evaluate:</p>
+                    <ul>
+                        <li>Brainstem and trigeminal nucleus function</li>
+                        <li>Cervical spine contribution to headache patterns</li>
+                        <li>Visual processing and photosensitivity</li>
+                        <li>Autonomic and vascular components</li>
+                    </ul>
+                    <p>Many patients who have failed medication management find relief through neurological rehabilitation approaches.</p>
+                </div>
+            </div>
+
+            <!-- Movement Disorders -->
+            <div class="service-detail">
+                <div class="service-image">
+                    <img src="../images/service-movement.jpg" alt="Movement Disorder Treatment">
+                </div>
+                <div class="service-text">
+                    <h3>Movement Disorders</h3>
+                    <p>Tremor, dystonia, and other movement disorders involve dysfunction in the motor control circuits of the brain. While we can't cure degenerative conditions, we can often improve function through targeted rehabilitation.</p>
+                    <p>Our approach focuses on:</p>
+                    <ul>
+                        <li>Cerebellar function and timing</li>
+                        <li>Basal ganglia contributions</li>
+                        <li>Proprioceptive and sensory integration</li>
+                        <li>Compensatory strategies and motor learning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Neurodevelopmental -->
+            <div class="service-detail reverse">
+                <div class="service-image">
+                    <img src="../images/service-neurodev.jpg" alt="Neurodevelopmental Treatment">
+                </div>
+                <div class="service-text">
+                    <h3>Neurodevelopmental Disorders</h3>
+                    <p>Children with developmental delays, learning difficulties, ADHD, and sensory processing challenges often have underlying neurological inefficiencies that can be addressed through targeted intervention.</p>
+                    <p>We assess:</p>
+                    <ul>
+                        <li>Primitive reflex integration</li>
+                        <li>Visual and auditory processing</li>
+                        <li>Vestibular and proprioceptive development</li>
+                        <li>Cerebellar and frontal lobe function</li>
+                    </ul>
+                    <p>Neuroplasticity-based approaches can help children develop more efficient brain function and improve their ability to learn and regulate.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Not Sure If We Can Help?</h2>
+            <p>Book a free consultation call with one of our physicians. We'll listen to your story and tell you honestly whether our approach is right for your situation.</p>
+            <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="cta-button" target="_blank">
+                Schedule a Consultation
+                <img src="../images/cta-arrow.png" alt="">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/logo.png" alt="The Keiser Clinic">
+                    <p>The Keiser Clinic provides advanced neurological care for complex conditions. We combine diagnostic precision with evidence-based treatment to help patients find answers and get better.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html">How This Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Conditions</h4>
+                    <ul>
+                        <li><a href="pots.html">POTS & Dysautonomia</a></li>
+                        <li><a href="services.html">Post-Concussion</a></li>
+                        <li><a href="services.html">Vestibular Disorders</a></li>
+                        <li><a href="services.html">Migraines</a></li>
+                        <li><a href="services.html">Balance Problems</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links footer-contact">
+                    <h4>Contact</h4>
+                    <p>Chelsea, Michigan</p>
+                    <p>Patients from 48 states and 9 countries</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/thekeiserclinic" target="_blank" rel="noopener">
+                            <img src="../images/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://youtube.com/@dockeiser" target="_blank" rel="noopener">
+                            <img src="../images/youtube.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Keiser Clinic. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

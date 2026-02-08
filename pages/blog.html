@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educational articles about POTS, dysautonomia, vestibular disorders, post-concussion syndrome, and neurological rehabilitation from The Keiser Clinic.">
+    <meta property="og:title" content="Blog | The Keiser Clinic">
+    <meta property="og:description" content="Educational articles about POTS, dysautonomia, vestibular disorders, and neurological rehabilitation.">
+    <meta property="og:image" content="../images/dr-keiser-brain-explanation.jpg">
+    <meta property="og:type" content="website">
+    <title>Blog | The Keiser Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .blog-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-card-content {
+            padding: 25px;
+        }
+        .blog-category {
+            display: inline-block;
+            background: var(--gold-light);
+            color: var(--gold-dark);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        .blog-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+        .blog-card h3 a {
+            color: var(--black);
+            text-decoration: none;
+        }
+        .blog-card h3 a:hover {
+            color: var(--gold-dark);
+        }
+        .blog-excerpt {
+            color: var(--gray);
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .blog-meta {
+            font-size: 13px;
+            color: #999;
+        }
+        .featured-post {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 50px;
+            align-items: center;
+            background: var(--light-gray);
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 60px;
+        }
+        .featured-post img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .featured-content {
+            padding: 40px 40px 40px 0;
+        }
+        .featured-badge {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--black);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+        }
+        .featured-content h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        .featured-content p {
+            font-size: 17px;
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold-dark);
+            font-weight: 600;
+            font-family: var(--font-heading);
+        }
+        @media (max-width: 1024px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            .featured-post {
+                grid-template-columns: 1fr;
+            }
+            .featured-content {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="The Keiser Clinic">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="how-it-works.html">How This Works</a>
+                <a href="blog.html">Blog</a>
+                <a href="faq.html">FAQ</a>
+                <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="nav-cta" target="_blank">Schedule a Consultation</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: auto; padding: 160px 0 80px;">
+        <div class="container">
+            <div class="hero-text" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1>The Keiser Clinic <span>Blog</span></h1>
+                <p class="hero-description" style="max-width: 600px; margin: 0 auto;">Educational articles about neurological conditions, diagnostic approaches, and what actually works for complex cases.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section style="padding: 40px 0 100px;">
+        <div class="container">
+
+            <!-- Featured Post -->
+            <div class="featured-post">
+                <img src="../images/service-dysautonomia.jpg" alt="POTS: Description vs Explanation">
+                <div class="featured-content">
+                    <span class="featured-badge">Featured</span>
+                    <h2>POTS Is a Description, Not an Explanation</h2>
+                    <p>Your POTS diagnosis told you what's happening. It didn't tell you why. Understanding the difference is the key to actually getting better.</p>
+                    <a href="pots.html" class="read-more">Read Article <img src="../images/sm-arrow.svg" alt=""></a>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid">
+
+                <div class="blog-card">
+                    <img src="../images/htw-tilt.jpg" alt="Transcranial Doppler">
+                    <div class="blog-card-content">
+                        <span class="blog-category">Dysautonomia</span>
+                        <h3><a href="#">Why We Use Transcranial Doppler for POTS</a></h3>
+                        <p class="blog-excerpt">Heart rate is only part of the story. Measuring actual blood flow to the brain reveals what's really happening when you stand up.</p>
+                        <div class="blog-meta">Dr. Nathan Keiser</div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="../images/htw-ocular.jpg" alt="Eye Movements">
+                    <div class="blog-card-content">
+                        <span class="blog-category">Neurology</span>
+                        <h3><a href="#">What Your Eye Movements Reveal About Your Brain</a></h3>
+                        <p class="blog-excerpt">Eye tracking isn't just for research labs. It's one of the most powerful tools we have for assessing brain function.</p>
+                        <div class="blog-meta">Dr. Nathan Keiser</div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="../images/service-brain-injury.jpg" alt="Post Concussion">
+                    <div class="blog-card-content">
+                        <span class="blog-category">Concussion</span>
+                        <h3><a href="#">When Rest Isn't Enough: Treating Persistent Post-Concussion Symptoms</a></h3>
+                        <p class="blog-excerpt">The old advice was to rest until symptoms resolve. For many patients, that never happens. Here's what actually works.</p>
+                        <div class="blog-meta">Dr. Nathan Keiser</div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="../images/service-balance.jpg" alt="Vestibular Disorders">
+                    <div class="blog-card-content">
+                        <span class="blog-category">Vestibular</span>
+                        <h3><a href="#">The 5 Types of Vestibular Dysfunction (And Why It Matters)</a></h3>
+                        <p class="blog-excerpt">Not all dizziness is the same. Identifying which component of your vestibular system is affected determines what treatment will work.</p>
+                        <div class="blog-meta">Dr. Nathan Keiser</div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="../images/htw-breathing.jpg" alt="Autonomic Testing">
+                    <div class="blog-card-content">
+                        <span class="blog-category">Dysautonomia</span>
+                        <h3><a href="#">Beyond the Tilt Table: Comprehensive Autonomic Testing</a></h3>
+                        <p class="blog-excerpt">A positive tilt table test confirms POTS. But it doesn't tell you why. Here's what we test to find the actual mechanism.</p>
+                        <div class="blog-meta">Dr. Nathan Keiser</div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="../images/service-migraine.jpg" alt="Migraine">
+                    <div class="blog-card-content">
+                        <span class="blog-category">Migraine</span>
+                        <h3><a href="#">Migraine as a Neurological Event: A Different Approach</a></h3>
+                        <p class="blog-excerpt">Medication manages the pain. But migraine is more than pain — it's a neurological event. Treating it that way opens new options.</p>
+                        <div class="blog-meta">Dr. Nathan Keiser</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Find Answers?</h2>
+            <p>Book a free consultation call with one of our physicians. We'll listen to your story and tell you honestly whether we can help.</p>
+            <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="cta-button" target="_blank">
+                Schedule a Consultation
+                <img src="../images/cta-arrow.png" alt="">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/logo.png" alt="The Keiser Clinic">
+                    <p>The Keiser Clinic provides advanced neurological care for complex conditions. We combine diagnostic precision with evidence-based treatment to help patients find answers and get better.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html">How This Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Conditions</h4>
+                    <ul>
+                        <li><a href="pots.html">POTS & Dysautonomia</a></li>
+                        <li><a href="services.html">Post-Concussion</a></li>
+                        <li><a href="services.html">Vestibular Disorders</a></li>
+                        <li><a href="services.html">Migraines</a></li>
+                        <li><a href="services.html">Balance Problems</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links footer-contact">
+                    <h4>Contact</h4>
+                    <p>Chelsea, Michigan</p>
+                    <p>Patients from 48 states and 9 countries</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/thekeiserclinic" target="_blank" rel="noopener">
+                            <img src="../images/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://youtube.com/@dockeiser" target="_blank" rel="noopener">
+                            <img src="../images/youtube.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Keiser Clinic. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Robots.txt for The Keiser Clinic
+# https://keiserclinic.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://keiserclinic.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
