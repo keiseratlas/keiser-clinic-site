@@ -296,5 +296,72 @@
     </footer>
 
     <script src="../js/main.js"></script>
+
+    <!-- Structured Data: Medical Services -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "name": "Conditions We Treat | The Keiser Clinic",
+        "description": "The Keiser Clinic treats complex neurological conditions including POTS, dysautonomia, post-concussion syndrome, vestibular disorders, and migraines.",
+        "url": "https://keiserclinic.netlify.app/pages/services.html",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "MedicalCondition",
+                    "name": "POTS & Dysautonomia",
+                    "description": "Postural Orthostatic Tachycardia Syndrome and autonomic nervous system dysfunction diagnosed and treated through neurovascular testing and targeted rehabilitation.",
+                    "possibleTreatment": {
+                        "@type": "MedicalTherapy",
+                        "name": "Functional Neurology & Vestibular Rehabilitation"
+                    }
+                },
+                {
+                    "@type": "MedicalCondition",
+                    "name": "Post-Concussion Syndrome",
+                    "description": "Persistent concussion symptoms treated through oculomotor, vestibular, and cerebellar rehabilitation.",
+                    "possibleTreatment": {
+                        "@type": "MedicalTherapy",
+                        "name": "Neurological Rehabilitation"
+                    }
+                },
+                {
+                    "@type": "MedicalCondition",
+                    "name": "Vestibular Disorders",
+                    "description": "Dizziness, vertigo, and imbalance diagnosed through comprehensive vestibular testing including VNG and rotary chair.",
+                    "possibleTreatment": {
+                        "@type": "MedicalTherapy",
+                        "name": "Vestibular Rehabilitation Therapy"
+                    }
+                },
+                {
+                    "@type": "MedicalCondition",
+                    "name": "Migraines & Chronic Headaches",
+                    "description": "Migraines treated as neurological events through brainstem, trigeminal, and cervical evaluation.",
+                    "possibleTreatment": {
+                        "@type": "MedicalTherapy",
+                        "name": "Neurological Migraine Rehabilitation"
+                    }
+                },
+                {
+                    "@type": "MedicalCondition",
+                    "name": "Movement Disorders",
+                    "description": "Tremor, dystonia, and motor control dysfunction improved through cerebellar and sensory integration rehabilitation."
+                },
+                {
+                    "@type": "MedicalCondition",
+                    "name": "Neurodevelopmental Disorders",
+                    "description": "Developmental delays, ADHD, and sensory processing challenges addressed through neuroplasticity-based interventions."
+                }
+            ]
+        },
+        "provider": {
+            "@type": "MedicalClinic",
+            "name": "The Keiser Clinic",
+            "url": "https://keiserclinic.netlify.app"
+        }
+    }
+    </script>
 </body>
 </html>

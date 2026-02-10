@@ -13,7 +13,7 @@
     <meta name="twitter:title" content="Blog | The Keiser Clinic">
     <meta name="twitter:description" content="Educational articles about POTS, dysautonomia, vestibular disorders, and neurological rehab.">
     <meta name="twitter:image" content="https://keiserclinic.netlify.app/images/dr-keiser-brain-explanation.jpg">
-    <title>Blog | The Keiser Clinic</title>
+    <title>The Keiser Clinic Blog | Neurology Articles & Education</title>
     <link rel="canonical" href="https://keiserclinic.netlify.app/pages/blog.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -325,5 +325,69 @@
     </footer>
 
     <script src="../js/main.js"></script>
+
+    <!-- Structured Data: Blog -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "The Keiser Clinic Blog",
+        "description": "Educational articles about POTS, dysautonomia, vestibular disorders, post-concussion syndrome, and neurological rehabilitation.",
+        "url": "https://keiserclinic.netlify.app/pages/blog.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "The Keiser Clinic",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://keiserclinic.netlify.app/images/logo.png"
+            }
+        },
+        "blogPost": [
+            {
+                "@type": "BlogPosting",
+                "headline": "POTS Is a Description, Not an Explanation",
+                "description": "Your POTS diagnosis told you what's happening. It didn't tell you why. Understanding the difference is the key to actually getting better.",
+                "author": {"@type": "Person", "name": "Dr. Nathan Keiser"},
+                "image": "https://keiserclinic.netlify.app/images/service-dysautonomia.jpg",
+                "url": "https://keiserclinic.netlify.app/pages/pots.html"
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "Why We Use Transcranial Doppler for POTS",
+                "description": "Heart rate is only part of the story. Measuring actual blood flow to the brain reveals what's really happening when you stand up.",
+                "author": {"@type": "Person", "name": "Dr. Nathan Keiser"},
+                "image": "https://keiserclinic.netlify.app/images/htw-tilt.jpg"
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "What Your Eye Movements Reveal About Your Brain",
+                "description": "Eye tracking is one of the most powerful tools we have for assessing brain function.",
+                "author": {"@type": "Person", "name": "Dr. Nathan Keiser"},
+                "image": "https://keiserclinic.netlify.app/images/htw-ocular.jpg"
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "When Rest Isn't Enough: Treating Persistent Post-Concussion Symptoms",
+                "description": "The old advice was to rest until symptoms resolve. For many patients, that never happens. Here's what actually works.",
+                "author": {"@type": "Person", "name": "Dr. Nathan Keiser"},
+                "image": "https://keiserclinic.netlify.app/images/service-brain-injury.jpg"
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "The 5 Types of Vestibular Dysfunction (And Why It Matters)",
+                "description": "Not all dizziness is the same. Identifying which component of your vestibular system is affected determines what treatment will work.",
+                "author": {"@type": "Person", "name": "Dr. Nathan Keiser"},
+                "image": "https://keiserclinic.netlify.app/images/service-balance.jpg"
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "Beyond the Tilt Table: Comprehensive Autonomic Testing",
+                "description": "A positive tilt table test confirms POTS. But it doesn't tell you why. Here's what we test to find the actual mechanism.",
+                "author": {"@type": "Person", "name": "Dr. Nathan Keiser"},
+                "image": "https://keiserclinic.netlify.app/images/htw-breathing.jpg"
+            }
+        ]
+    }
+    </script>
 </body>
 </html>

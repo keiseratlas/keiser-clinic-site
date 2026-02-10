@@ -232,5 +232,54 @@
     </footer>
 
     <script src="../js/main.js"></script>
+
+    <!-- Structured Data: Organization & Team -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "The Keiser Clinic",
+        "description": "A family-owned chiropractic neurology practice in Chelsea, Michigan specializing in complex neurological conditions.",
+        "url": "https://keiserclinic.netlify.app",
+        "image": "https://keiserclinic.netlify.app/images/team-photo.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chelsea",
+            "addressRegion": "MI",
+            "addressCountry": "US"
+        },
+        "medicalSpecialty": "Neurology",
+        "employee": [
+            {
+                "@type": "Physician",
+                "name": "Dr. Nathan Keiser",
+                "jobTitle": "Founder & Lead Clinician",
+                "description": "Board-certified chiropractic neurologist specializing in vestibular rehabilitation, dysautonomia management, and brain injury recovery.",
+                "image": "https://keiserclinic.netlify.app/images/dr-nate.png",
+                "medicalSpecialty": "Neurology"
+            },
+            {
+                "@type": "Physician",
+                "name": "Dr. Claire Keiser",
+                "jobTitle": "Clinical Director",
+                "description": "Specializes in pediatric neurology and neurodevelopmental disorders.",
+                "image": "https://keiserclinic.netlify.app/images/dr-claire.png",
+                "medicalSpecialty": "Pediatric Neurology"
+            },
+            {
+                "@type": "Physician",
+                "name": "Dr. Mattson",
+                "jobTitle": "Associate Clinician",
+                "description": "Specializes in vestibular rehabilitation and balance disorders.",
+                "image": "https://keiserclinic.netlify.app/images/dr-mattson.png",
+                "medicalSpecialty": "Vestibular Rehabilitation"
+            }
+        ],
+        "sameAs": [
+            "https://instagram.com/thekeiserclinic",
+            "https://youtube.com/@dockeiser"
+        ]
+    }
+    </script>
 </body>
 </html>
