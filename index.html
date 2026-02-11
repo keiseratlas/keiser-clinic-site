@@ -59,6 +59,10 @@
     }
     </script>
 
+    <!-- Preload critical resources -->
+    <link rel="preload" href="images/nate-home.png" as="image">
+    <link rel="dns-prefetch" href="https://calendly.com">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,7 +92,7 @@
                 <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="nav-cta" target="_blank">Schedule a Consultation</a>
             </div>
 
-            <div class="menu-toggle" id="menu-toggle">
+            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -148,43 +152,43 @@
             </div>
             <div class="conditions-grid">
                 <a href="pages/services.html" class="condition-card animate-on-scroll">
-                    <img src="images/service-brain-injury.jpg" alt="Post Concussion Syndrome">
+                    <img data-src="images/service-brain-injury.jpg" alt="Post Concussion Syndrome treatment at The Keiser Clinic" loading="lazy">
                     <h4>Post Concussion Syndrome</h4>
                 </a>
                 <a href="pages/pots.html" class="condition-card animate-on-scroll">
-                    <img src="images/service-dysautonomia.jpg" alt="Dysautonomia & POTS">
+                    <img data-src="images/service-dysautonomia.jpg" alt="Dysautonomia and POTS treatment at The Keiser Clinic" loading="lazy">
                     <h4>Dysautonomia & POTS</h4>
                 </a>
                 <a href="pages/services.html" class="condition-card animate-on-scroll">
-                    <img src="images/service-balance.jpg" alt="Vestibular Disorders">
+                    <img data-src="images/service-balance.jpg" alt="Vestibular disorder diagnosis and rehabilitation" loading="lazy">
                     <h4>Vestibular Disorders</h4>
                 </a>
                 <a href="pages/services.html" class="condition-card animate-on-scroll">
-                    <img src="images/service-migraine.jpg" alt="Migraines & Headaches">
+                    <img data-src="images/service-migraine.jpg" alt="Migraine and headache neurological treatment" loading="lazy">
                     <h4>Migraines & Headaches</h4>
                 </a>
                 <a href="pages/services.html" class="condition-card animate-on-scroll">
-                    <img src="images/service-movement.jpg" alt="Movement Disorders">
+                    <img data-src="images/service-movement.jpg" alt="Movement disorder evaluation and therapy" loading="lazy">
                     <h4>Movement Disorders</h4>
                 </a>
                 <a href="pages/services.html" class="condition-card animate-on-scroll">
-                    <img src="images/service-neurodev.jpg" alt="Neurodevelopmental">
+                    <img data-src="images/service-neurodev.jpg" alt="Neurodevelopmental condition assessment" loading="lazy">
                     <h4>Neurodevelopmental</h4>
                 </a>
                 <a href="pages/services.html" class="condition-card animate-on-scroll">
-                    <img src="images/conditions-1.jpg" alt="Chronic Pain">
+                    <img data-src="images/conditions-1.jpg" alt="Chronic pain neurological evaluation" loading="lazy">
                     <h4>Chronic Pain</h4>
                 </a>
                 <a href="pages/services.html" class="condition-card animate-on-scroll">
-                    <img src="images/service-balance.jpg" alt="Dizziness">
+                    <img data-src="images/service-balance.jpg" alt="Dizziness and vertigo treatment" loading="lazy">
                     <h4>Dizziness & Vertigo</h4>
                 </a>
                 <a href="pages/services.html" class="condition-card animate-on-scroll">
-                    <img src="images/service-brain-injury.jpg" alt="Brain Injury">
+                    <img data-src="images/service-brain-injury.jpg" alt="Traumatic brain injury rehabilitation" loading="lazy">
                     <h4>Brain Injury</h4>
                 </a>
                 <a href="pages/services.html" class="condition-card animate-on-scroll">
-                    <img src="images/service-balance.jpg" alt="Balance Problems">
+                    <img data-src="images/service-balance.jpg" alt="Balance problem diagnosis and treatment" loading="lazy">
                     <h4>Balance Problems</h4>
                 </a>
             </div>
@@ -258,10 +262,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-dots" id="testimonial-dots">
-                    <span class="testimonial-dot active" data-slide="0"></span>
-                    <span class="testimonial-dot" data-slide="1"></span>
-                    <span class="testimonial-dot" data-slide="2"></span>
+                <div class="testimonial-dots" id="testimonial-dots" role="tablist" aria-label="Testimonial slides">
+                    <span class="testimonial-dot active" data-slide="0" role="tab" aria-label="Slide 1" aria-selected="true"></span>
+                    <span class="testimonial-dot" data-slide="1" role="tab" aria-label="Slide 2" aria-selected="false"></span>
+                    <span class="testimonial-dot" data-slide="2" role="tab" aria-label="Slide 3" aria-selected="false"></span>
                 </div>
             </div>
         </div>
@@ -319,12 +323,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="slider-dots" id="slider-dots">
-                    <span class="slider-dot active" data-slide="0"></span>
-                    <span class="slider-dot" data-slide="1"></span>
-                    <span class="slider-dot" data-slide="2"></span>
-                    <span class="slider-dot" data-slide="3"></span>
-                    <span class="slider-dot" data-slide="4"></span>
+                <div class="slider-dots" id="slider-dots" role="tablist" aria-label="Treatment steps">
+                    <span class="slider-dot active" data-slide="0" role="tab" aria-label="Step 1" aria-selected="true"></span>
+                    <span class="slider-dot" data-slide="1" role="tab" aria-label="Step 2" aria-selected="false"></span>
+                    <span class="slider-dot" data-slide="2" role="tab" aria-label="Step 3" aria-selected="false"></span>
+                    <span class="slider-dot" data-slide="3" role="tab" aria-label="Step 4" aria-selected="false"></span>
+                    <span class="slider-dot" data-slide="4" role="tab" aria-label="Step 5" aria-selected="false"></span>
                 </div>
             </div>
         </div>
@@ -339,17 +343,17 @@
             </div>
             <div class="values-grid">
                 <div class="value-card animate-on-scroll">
-                    <img src="images/value-empathy.jpg" alt="Empathy & Compassion">
+                    <img data-src="images/value-empathy.jpg" alt="Empathy and compassion in neurological care" loading="lazy">
                     <h3>Empathy & Compassion</h3>
                     <p>We understand what it's like to be dismissed or told nothing is wrong. We listen, we believe you, and we work with you to find answers.</p>
                 </div>
                 <div class="value-card animate-on-scroll">
-                    <img src="images/value-partnership.jpg" alt="Partnership = Results">
+                    <img data-src="images/value-partnership.jpg" alt="Patient partnership for better treatment results" loading="lazy">
                     <h3>Partnership = Results</h3>
                     <p>Your recovery requires your participation. We provide the expertise and the plan — you bring the commitment. Together, we achieve results.</p>
                 </div>
                 <div class="value-card animate-on-scroll">
-                    <img src="images/value-honesty.jpg" alt="No False Hopes">
+                    <img data-src="images/value-honesty.jpg" alt="Honest assessment of treatment expectations" loading="lazy">
                     <h3>No False Hopes</h3>
                     <p>We'll tell you honestly what we can and can't help with. If we don't think we can help, we'll say so — and point you in the right direction.</p>
                 </div>
@@ -362,7 +366,7 @@
         <div class="container">
             <div class="team-content">
                 <div class="team-image animate-on-scroll">
-                    <img src="images/dr-nate.png" alt="Dr. Nathan Keiser">
+                    <img data-src="images/dr-nate.png" alt="Dr. Nathan Keiser, board-certified chiropractic neurologist" loading="lazy">
                 </div>
                 <div class="team-text animate-on-scroll">
                     <h2>About <span>Dr. Nathan Keiser</span></h2>
@@ -389,19 +393,19 @@
             </div>
             <div class="instagram-grid">
                 <a href="https://instagram.com/thekeiserclinic" class="instagram-item" target="_blank" rel="noopener">
-                    <img src="images/ig-1.jpg" alt="Instagram Post">
+                    <img data-src="images/ig-1.jpg" alt="The Keiser Clinic Instagram post about neurological care" loading="lazy">
                 </a>
                 <a href="https://instagram.com/thekeiserclinic" class="instagram-item" target="_blank" rel="noopener">
-                    <img src="images/ig-2.jpg" alt="Instagram Post">
+                    <img data-src="images/ig-2.jpg" alt="The Keiser Clinic Instagram post about patient recovery" loading="lazy">
                 </a>
                 <a href="https://instagram.com/thekeiserclinic" class="instagram-item" target="_blank" rel="noopener">
-                    <img src="images/ig-3.jpg" alt="Instagram Post">
+                    <img data-src="images/ig-3.jpg" alt="The Keiser Clinic Instagram post about clinic updates" loading="lazy">
                 </a>
                 <a href="https://instagram.com/thekeiserclinic" class="instagram-item" target="_blank" rel="noopener">
-                    <img src="images/ig-4.jpg" alt="Instagram Post">
+                    <img data-src="images/ig-4.jpg" alt="The Keiser Clinic Instagram post about treatment results" loading="lazy">
                 </a>
                 <a href="https://instagram.com/thekeiserclinic" class="instagram-item" target="_blank" rel="noopener">
-                    <img src="images/ig-5.jpg" alt="Instagram Post">
+                    <img data-src="images/ig-5.jpg" alt="The Keiser Clinic Instagram post about brain health" loading="lazy">
                 </a>
             </div>
         </div>
