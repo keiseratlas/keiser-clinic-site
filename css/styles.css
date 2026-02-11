@@ -613,8 +613,8 @@ p {
 
 .values-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
 
 .value-card {
@@ -967,6 +967,10 @@ p {
 @media (max-width: 1024px) {
     .conditions-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .testimonials-grid {
