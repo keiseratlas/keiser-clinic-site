@@ -266,13 +266,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ================================================
-    // FORM HANDLING (if forms are added)
+    // FORM HANDLING - Email Capture
     // ================================================
     const forms = document.querySelectorAll('form');
     forms.forEach(form => {
         form.addEventListener('submit', function(e) {
-            // Add form validation and submission logic here
-            trackEvent('Form', 'submit', form.id || 'unknown');
+            var formName = form.getAttribute('name') || form.id || 'unknown';
+            trackEvent('Lead Magnet', 'email_capture', formName);
+
+            // Change button text to show confirmation
+            var btn = form.querySelector('button[type="submit"]');
+            if (btn) {
+                btn.textContent = 'Sending...';
+                btn.disabled = true;
+            }
         });
     });
 

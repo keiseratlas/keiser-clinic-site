@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free guide: the 4 mechanisms your doctors aren't testing for — and how to find which one is keeping you sick. From The Keiser Clinic.">
+    <meta property="og:title" content="Why Nothing Has Worked Yet | Free Guide from The Keiser Clinic">
+    <meta property="og:description" content="The 4 mechanisms your doctors aren't testing for — and how to find which one is keeping you sick.">
+    <meta property="og:image" content="https://keiserclinic.netlify.app/images/htw-tilt.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keiserclinic.netlify.app/pages/why-nothing-has-worked.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Why Nothing Has Worked Yet | Free Guide from The Keiser Clinic">
+    <meta name="twitter:description" content="The 4 mechanisms your doctors aren't testing for — and how to find which one is keeping you sick.">
+    <meta name="twitter:image" content="https://keiserclinic.netlify.app/images/htw-tilt.jpg">
+    <title>Why Nothing Has Worked Yet | Free Guide | The Keiser Clinic</title>
+    <link rel="canonical" href="https://keiserclinic.netlify.app/pages/why-nothing-has-worked.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <style>
+        .lm-hero {
+            padding: 160px 0 80px;
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+        }
+        .lm-hero h1 {
+            color: var(--white);
+            font-size: clamp(2rem, 4.5vw, 3.2rem);
+            max-width: 700px;
+            margin: 0 auto 15px;
+            line-height: 1.15;
+        }
+        .lm-hero h1 span {
+            color: var(--gold);
+        }
+        .lm-hero .subtitle {
+            font-size: 20px;
+            color: rgba(255,255,255,0.75);
+            max-width: 580px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+        .lm-capture-box {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 40px 35px;
+            max-width: 480px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .lm-capture-box .hook-line {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--black);
+            margin-bottom: 6px;
+            line-height: 1.3;
+        }
+        .lm-capture-box .hook-sub {
+            font-size: 15px;
+            color: var(--gray);
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+        .lm-capture-box input[type="email"] {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            font-family: var(--font-body);
+            margin-bottom: 12px;
+            transition: border-color 0.3s ease;
+        }
+        .lm-capture-box input[type="email"]:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+        .lm-capture-box input[type="email"]::placeholder {
+            color: #999;
+        }
+        .lm-capture-box button {
+            width: 100%;
+            padding: 16px;
+            background: var(--gold);
+            color: var(--black);
+            border: none;
+            border-radius: 6px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lm-capture-box button:hover {
+            background: var(--gold-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(228,190,116,0.3);
+        }
+        .lm-capture-box .privacy-note {
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+            margin-top: 12px;
+            margin-bottom: 0;
+        }
+        .lm-proof {
+            padding: 60px 0;
+            background: var(--light-gray);
+        }
+        .lm-proof .proof-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        .lm-proof .proof-stat {
+            text-align: center;
+        }
+        .lm-proof .proof-stat .number {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 36px;
+            color: var(--gold-dark);
+            display: block;
+        }
+        .lm-proof .proof-stat .label {
+            font-size: 14px;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .lm-preview {
+            padding: 80px 0;
+            background: var(--white);
+        }
+        .lm-preview h2 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .lm-preview-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lm-preview-item {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid var(--gold);
+        }
+        .lm-preview-item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--black);
+        }
+        .lm-preview-item p {
+            font-size: 15px;
+            color: var(--gray);
+            margin: 0;
+            line-height: 1.6;
+        }
+        .lm-pain {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+        .lm-pain h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .lm-pain-list {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .lm-pain-list .pain-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 17px;
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+        .lm-pain-list .pain-check {
+            color: var(--gold-dark);
+            font-size: 20px;
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .lm-bottom-cta {
+            padding: 80px 0;
+            background: var(--black);
+            text-align: center;
+            color: var(--white);
+        }
+        .lm-bottom-cta h2 {
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+        .lm-bottom-cta .subtitle {
+            font-size: 18px;
+            color: rgba(255,255,255,0.7);
+            max-width: 500px;
+            margin: 0 auto 30px;
+        }
+        .lm-bottom-capture {
+            max-width: 420px;
+            margin: 0 auto;
+        }
+        .lm-bottom-capture .capture-row {
+            display: flex;
+            gap: 10px;
+        }
+        .lm-bottom-capture input[type="email"] {
+            flex: 1;
+            padding: 14px 16px;
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 6px;
+            font-size: 16px;
+            font-family: var(--font-body);
+            background: rgba(255,255,255,0.1);
+            color: var(--white);
+            transition: border-color 0.3s ease;
+        }
+        .lm-bottom-capture input[type="email"]:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+        .lm-bottom-capture input[type="email"]::placeholder {
+            color: rgba(255,255,255,0.4);
+        }
+        .lm-bottom-capture button {
+            padding: 14px 24px;
+            background: var(--gold);
+            color: var(--black);
+            border: none;
+            border-radius: 6px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+        }
+        .lm-bottom-capture button:hover {
+            background: var(--gold-dark);
+        }
+        .lm-bottom-capture .privacy-note {
+            font-size: 12px;
+            color: rgba(255,255,255,0.4);
+            margin-top: 12px;
+        }
+        @media (max-width: 768px) {
+            .lm-preview-grid {
+                grid-template-columns: 1fr;
+            }
+            .lm-proof .proof-stats {
+                gap: 30px;
+            }
+            .lm-bottom-capture .capture-row {
+                flex-direction: column;
+            }
+            .lm-capture-box {
+                margin: 0 15px;
+                padding: 30px 25px;
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="The Keiser Clinic">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="how-it-works.html">How This Works</a>
+                <a href="blog.html">Blog</a>
+                <a href="faq.html">FAQ</a>
+                <a href="tel:+17347075105" class="nav-phone">(734) 707-5105</a>
+                <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="nav-cta" target="_blank">Schedule a Consultation</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero + Capture -->
+    <section class="lm-hero">
+        <div class="container">
+            <h1>Your Tests Came Back Normal.<br><span>You're Clearly Not.</span></h1>
+            <p class="subtitle">Find out which of the 4 mechanisms your doctors aren't testing for — and why nothing has worked yet.</p>
+            <div class="lm-capture-box">
+                <p class="hook-line">Get the free guide: "Why Nothing Has Worked Yet"</p>
+                <p class="hook-sub">The 4 mechanisms behind POTS, dysautonomia, and chronic dizziness that standard testing misses.</p>
+                <form name="lead-magnet" method="POST" data-netlify="true" action="guide-why-nothing-has-worked.html">
+                    <input type="hidden" name="form-name" value="lead-magnet">
+                    <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+                    <button type="submit">Send Me the Guide</button>
+                </form>
+                <p class="privacy-note">No spam. Unsubscribe anytime. We respect your privacy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <section class="lm-proof">
+        <div class="container">
+            <div class="proof-stats">
+                <div class="proof-stat">
+                    <span class="number">48</span>
+                    <span class="label">States Served</span>
+                </div>
+                <div class="proof-stat">
+                    <span class="number">9</span>
+                    <span class="label">Countries</span>
+                </div>
+                <div class="proof-stat">
+                    <span class="number">22M+</span>
+                    <span class="label">YouTube Views</span>
+                </div>
+                <div class="proof-stat">
+                    <span class="number">87K+</span>
+                    <span class="label">Subscribers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Does This Sound Familiar -->
+    <section class="lm-pain">
+        <div class="container">
+            <h2>Does This Sound Familiar?</h2>
+            <div class="lm-pain-list">
+                <div class="pain-item">
+                    <span class="pain-check">&check;</span>
+                    <span>Your tests came back "normal" but you feel anything but normal</span>
+                </div>
+                <div class="pain-item">
+                    <span class="pain-check">&check;</span>
+                    <span>You've been told it's anxiety, stress, or deconditioning</span>
+                </div>
+                <div class="pain-item">
+                    <span class="pain-check">&check;</span>
+                    <span>Salt, water, and compression help a little — but you're still sick</span>
+                </div>
+                <div class="pain-item">
+                    <span class="pain-check">&check;</span>
+                    <span>You can't stand in line, walk through a grocery store, or think clearly</span>
+                </div>
+                <div class="pain-item">
+                    <span class="pain-check">&check;</span>
+                    <span>Multiple specialists, no clear answers, no real plan</span>
+                </div>
+                <div class="pain-item">
+                    <span class="pain-check">&check;</span>
+                    <span>You've started to wonder if maybe it really IS all in your head</span>
+                </div>
+            </div>
+            <p style="text-align: center; font-size: 18px; color: var(--dark-gray); margin-top: 30px; font-weight: 500;">It's not. And this guide explains why.</p>
+        </div>
+    </section>
+
+    <!-- What's Inside -->
+    <section class="lm-preview">
+        <div class="container">
+            <h2>What's Inside the Guide</h2>
+            <div class="lm-preview-grid">
+                <div class="lm-preview-item">
+                    <h3>Mechanism #1: Blood Flow</h3>
+                    <p>Why your brain isn't getting enough blood when you stand — and why heart rate is a symptom, not the problem.</p>
+                </div>
+                <div class="lm-preview-item">
+                    <h3>Mechanism #2: Vestibular Signals</h3>
+                    <p>How false signals from your inner ear trigger a cascade of autonomic symptoms that look like anxiety but aren't.</p>
+                </div>
+                <div class="lm-preview-item">
+                    <h3>Mechanism #3: Cerebellar Calibration</h3>
+                    <p>The brain structure nobody checks — and how miscalibration explains symptoms that seem unrelated.</p>
+                </div>
+                <div class="lm-preview-item">
+                    <h3>Mechanism #4: Cervical Spine</h3>
+                    <p>Why your neck might be contributing to everything — and why a "normal" MRI doesn't rule it out.</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 40px; color: var(--gray); font-size: 16px;">Plus: a self-assessment table, history clues to narrow your mechanism, the correct testing sequence, and the treatment order that prevents crashes and plateaus.</p>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="lm-bottom-cta">
+        <div class="container">
+            <h2>Stop Guessing. Find Your Mechanism.</h2>
+            <p class="subtitle">Get the free guide and finally understand why nothing has worked — and what to do about it.</p>
+            <div class="lm-bottom-capture">
+                <form name="lead-magnet-bottom" method="POST" data-netlify="true" action="guide-why-nothing-has-worked.html">
+                    <input type="hidden" name="form-name" value="lead-magnet-bottom">
+                    <div class="capture-row">
+                        <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+                        <button type="submit">Get the Guide</button>
+                    </div>
+                </form>
+                <p class="privacy-note">No spam. Unsubscribe anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/logo.png" alt="The Keiser Clinic">
+                    <p>The Keiser Clinic provides advanced neurological care for complex conditions. We combine diagnostic precision with evidence-based treatment to help patients find answers and get better.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html">How This Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Conditions</h4>
+                    <ul>
+                        <li><a href="pots.html">POTS & Dysautonomia</a></li>
+                        <li><a href="services.html">Post-Concussion</a></li>
+                        <li><a href="services.html">Vestibular Disorders</a></li>
+                        <li><a href="services.html">Migraines</a></li>
+                        <li><a href="services.html">Balance Problems</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links footer-contact">
+                    <h4>Contact</h4>
+                    <p><a href="tel:+17347075105" style="color: var(--gold); text-decoration: none;">(734) 707-5105</a></p>
+                    <p>400 N Main St, Chelsea, MI 48118</p>
+                    <p><a href="mailto:info@drkeiser.com" style="color: var(--gold); text-decoration: none;">info@drkeiser.com</a></p>
+                    <p>Fax: 734-219-4841</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/thekeiserclinic" target="_blank" rel="noopener">
+                            <img src="../images/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://youtube.com/@dockeiser" target="_blank" rel="noopener">
+                            <img src="../images/youtube.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Keiser Clinic. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

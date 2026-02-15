@@ -349,6 +349,63 @@
             font-family: 'Montserrat', sans-serif;
         }
 
+        /* Email Capture */
+        .pots-capture {
+            background: var(--dark);
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .pots-capture h3 {
+            color: var(--white);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+        .pots-capture .cap-sub {
+            color: rgba(255,255,255,0.6);
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .pots-capture-form {
+            display: flex;
+            gap: 10px;
+            max-width: 420px;
+            margin: 0 auto;
+        }
+        .pots-capture-form input[type="email"] {
+            flex: 1;
+            padding: 14px 16px;
+            border: 2px solid rgba(255,255,255,0.15);
+            border-radius: 6px;
+            font-size: 15px;
+            background: rgba(255,255,255,0.08);
+            color: var(--white);
+        }
+        .pots-capture-form input[type="email"]:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+        .pots-capture-form input[type="email"]::placeholder {
+            color: rgba(255,255,255,0.35);
+        }
+        .pots-capture-form button {
+            padding: 14px 22px;
+            background: var(--gold);
+            color: var(--dark);
+            border: none;
+            border-radius: 6px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .pots-capture-form button:hover {
+            background: #C9A55F;
+        }
+
         /* Footer */
         footer {
             background: var(--black);
@@ -374,6 +431,7 @@
             .two-col, .cards { grid-template-columns: 1fr; }
             .cta { padding: 18px 36px; font-size: 16px; }
             section { padding: 60px 20px; }
+            .pots-capture-form { flex-direction: column; }
         }
     </style>
     <!-- Google tag (gtag.js) -->
@@ -618,6 +676,17 @@
             <div class="faq-a">We'll tell you. We have no interest in taking patients we can't help. If our approach isn't right for your situation, we'll explain why and suggest alternatives if we can.</div>
         </div>
     </div>
+</section>
+
+<!-- Email Capture -->
+<section class="pots-capture">
+    <h3>Your tests came back normal. You're clearly not.</h3>
+    <p class="cap-sub">Free guide: the 4 mechanisms your doctors aren't testing for.</p>
+    <form class="pots-capture-form" name="pots-capture" method="POST" data-netlify="true" action="guide-why-nothing-has-worked.html">
+        <input type="hidden" name="form-name" value="pots-capture">
+        <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+        <button type="submit">Get the Guide</button>
+    </form>
 </section>
 
 <!-- FINAL CTA -->

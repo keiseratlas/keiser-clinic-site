@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Why Nothing Has Worked Yet — the 4 mechanisms your doctors aren't testing for. Free guide from The Keiser Clinic.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Why Nothing Has Worked Yet | Your Free Guide | The Keiser Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <style>
+        .guide-hero {
+            padding: 160px 0 60px;
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+        }
+        .guide-hero h1 {
+            color: var(--white);
+            font-size: clamp(2rem, 4.5vw, 3rem);
+            max-width: 700px;
+            margin: 0 auto 15px;
+        }
+        .guide-hero h1 span {
+            color: var(--gold);
+        }
+        .guide-hero .subtitle {
+            font-size: 18px;
+            color: rgba(255,255,255,0.7);
+            max-width: 550px;
+            margin: 0 auto;
+        }
+        .guide-content {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 60px 20px 80px;
+        }
+        .guide-content h2 {
+            font-size: 28px;
+            margin: 50px 0 20px;
+            color: var(--black);
+        }
+        .guide-content h3 {
+            font-size: 20px;
+            margin: 30px 0 12px;
+            color: var(--dark-gray);
+        }
+        .guide-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 18px;
+        }
+        .guide-content ul, .guide-content ol {
+            margin: 18px 0 25px 25px;
+        }
+        .guide-content li {
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .guide-content ol li {
+            list-style: decimal;
+        }
+        .guide-content strong {
+            color: var(--black);
+        }
+        .mechanism-card {
+            background: var(--light-gray);
+            border-left: 4px solid var(--gold);
+            border-radius: 0 10px 10px 0;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        .mechanism-card h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .mechanism-card h3 {
+            font-size: 17px;
+            margin: 20px 0 8px;
+            color: var(--gold-dark);
+        }
+        .mechanism-card p {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        .guide-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 16px;
+        }
+        .guide-table th {
+            background: var(--gold);
+            color: var(--black);
+            padding: 12px 16px;
+            text-align: left;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .guide-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            color: #333;
+        }
+        .guide-table tr:nth-child(even) {
+            background: var(--light-gray);
+        }
+        .guide-callout {
+            background: var(--gold-light);
+            border-left: 4px solid var(--gold);
+            padding: 25px 30px;
+            border-radius: 0 8px 8px 0;
+            margin: 35px 0;
+        }
+        .guide-callout p {
+            margin: 0;
+            font-size: 17px;
+            font-weight: 500;
+            color: var(--dark-gray);
+        }
+        .guide-sequence {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        .guide-sequence ol {
+            margin-left: 20px;
+        }
+        .guide-sequence li {
+            margin-bottom: 12px;
+        }
+        .guide-cta {
+            text-align: center;
+            background: var(--black);
+            padding: 60px 30px;
+            border-radius: 12px;
+            margin: 50px 0 0;
+        }
+        .guide-cta h2 {
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+        .guide-cta p {
+            color: rgba(255,255,255,0.7);
+            max-width: 500px;
+            margin: 0 auto 25px;
+        }
+        .guide-cta .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        @media (max-width: 768px) {
+            .guide-content h2 { font-size: 24px; }
+            .guide-content p { font-size: 16px; }
+            .mechanism-card { padding: 20px; }
+            .guide-table { font-size: 14px; }
+            .guide-table th, .guide-table td { padding: 10px 12px; }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="The Keiser Clinic">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="how-it-works.html">How This Works</a>
+                <a href="blog.html">Blog</a>
+                <a href="faq.html">FAQ</a>
+                <a href="tel:+17347075105" class="nav-phone">(734) 707-5105</a>
+                <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="nav-cta" target="_blank">Schedule a Consultation</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Guide Hero -->
+    <section class="guide-hero">
+        <div class="container">
+            <h1>Why Nothing Has <span>Worked Yet</span></h1>
+            <p class="subtitle">The 4 mechanisms your doctors aren't testing for — and how to find which one is keeping you sick</p>
+        </div>
+    </section>
+
+    <!-- Guide Content -->
+    <div class="guide-content">
+
+        <p style="font-size: 20px; line-height: 1.7; margin-bottom: 30px;">You've done everything right. You drank more water. You added salt. You wore the compression stockings. You tried the medications. You rested when they said rest. You pushed through when they said push through.</p>
+
+        <p style="font-size: 20px; line-height: 1.7;">And you're still sick.</p>
+
+        <p>Your tests came back "normal." Your doctor said "it's anxiety." Your cardiologist said "your heart is fine." Your neurologist shrugged. And somewhere in there, you started wondering if maybe they're right — maybe it IS all in your head.</p>
+
+        <div class="guide-callout">
+            <p>It's not. The reason nothing has worked is that nobody has looked for the actual mechanism driving your symptoms. They've been treating what they can see — heart rate, blood pressure, anxiety — without asking WHY those things are happening.</p>
+        </div>
+
+        <h2>Your Diagnosis Is a Description, Not an Explanation</h2>
+
+        <p>POTS tells you your heart rate goes up 30 beats when you stand. It doesn't tell you WHY.</p>
+
+        <p>Dysautonomia tells you your autonomic nervous system isn't working right. It doesn't tell you WHAT'S causing it.</p>
+
+        <p>"Vestibular dysfunction" tells you something is off with balance. It doesn't tell you WHERE the problem actually is.</p>
+
+        <p>These are descriptions. They describe what's happening. They don't explain what's DRIVING it.</p>
+
+        <p>Two patients with identical POTS diagnoses can have completely opposite mechanisms — and need completely opposite treatments. That's why the same protocol helps one person and does nothing for another.</p>
+
+        <div class="guide-callout">
+            <p>Until you know your mechanism, you're guessing. And guessing is why nothing has worked.</p>
+        </div>
+
+        <!-- Mechanism 1 -->
+        <div class="mechanism-card">
+            <h2>Mechanism #1: Your Brain Isn't Getting Enough Blood</h2>
+
+            <h3>What's happening</h3>
+            <p>When you stand up, blood flow to your brain decreases more than it should. Your heart races to try to compensate. This isn't a heart problem — it's a blood delivery problem.</p>
+
+            <h3>How we find it</h3>
+            <p>Transcranial Doppler (TCD) during tilt testing. We watch blood velocity in your middle cerebral artery in real time as you change position. Not just heart rate — actual blood flow.</p>
+
+            <h3>What it looks like</h3>
+            <p>Blood flow drops 20-40% within minutes of standing. Heart rate spikes to compensate. Symptoms get worse when you try to think and stand at the same time.</p>
+
+            <h3>What helps</h3>
+            <p>Volume expansion (salt, water, compression) provides temporary support. Horizontal cardiovascular training builds capacity without crashing you. Progressive tilt training retrains your autonomic reflexes over time.</p>
+
+            <h3>What doesn't help</h3>
+            <p>Vestibular exercises alone — wrong mechanism. Medications that slow heart rate — that's removing your body's compensation, not fixing the problem.</p>
+        </div>
+
+        <!-- Mechanism 2 -->
+        <div class="mechanism-card">
+            <h2>Mechanism #2: Your Vestibular System Is Sending False Signals</h2>
+
+            <h3>What's happening</h3>
+            <p>Your inner ear is telling your brain you're moving when you're not (or the other way around). Your autonomic system responds to a threat that doesn't exist. This creates a cascade — dizziness, nausea, heart rate changes, anxiety — all from a signal problem.</p>
+
+            <h3>How we find it</h3>
+            <p>VNG (videonystagmography) with caloric, rotational, and positional testing. We challenge each vestibular pathway and watch how your eyes respond. The eyes don't lie — they reveal exactly where the signal is breaking down.</p>
+
+            <h3>What it looks like</h3>
+            <p>Asymmetric vestibular function. Abnormal VOR (vestibulo-ocular reflex). Nystagmus in certain positions. Symptoms worse in visually busy environments like grocery stores or scrolling on your phone.</p>
+
+            <h3>What helps</h3>
+            <p>Targeted vestibular rehabilitation matched to your specific dysfunction. Not generic balance exercises — specific drills for your specific problem.</p>
+
+            <h3>What doesn't help</h3>
+            <p>Salt loading — wrong mechanism entirely. Generic "balance exercises" not matched to your testing results.</p>
+        </div>
+
+        <!-- Mechanism 3 -->
+        <div class="mechanism-card">
+            <h2>Mechanism #3: Your Cerebellum Can't Calibrate Properly</h2>
+
+            <h3>What's happening</h3>
+            <p>The cerebellum is your brain's calibrator. It times everything — eye movements, blood pressure adjustments, reflexes, coordination. When it can't calibrate correctly, everything is slightly off. Not broken — just miscalibrated.</p>
+
+            <h3>How we find it</h3>
+            <p>Detailed oculomotor testing. We measure saccades (fast eye jumps), smooth pursuit (tracking), and gaze stability. Abnormal patterns reveal cerebellar timing dysfunction that no standard exam looks for.</p>
+
+            <h3>What it looks like</h3>
+            <p>Eyes overshoot or undershoot targets. Blood pressure adjustments are too slow or overshoot then crash. Multiple "unrelated" symptoms — dizziness, brain fog, coordination problems, exercise intolerance — that all started around the same time.</p>
+
+            <h3>What helps</h3>
+            <p>Cerebellar rehabilitation — oculomotor drills, timing exercises, dual-task challenges. Precision work, not just general exercise.</p>
+
+            <h3>What doesn't help</h3>
+            <p>Standard vestibular PT — it's targeting the wrong structure. Medications that don't address calibration.</p>
+        </div>
+
+        <!-- Mechanism 4 -->
+        <div class="mechanism-card">
+            <h2>Mechanism #4: Your Neck Is Affecting Blood Delivery</h2>
+
+            <h3>What's happening</h3>
+            <p>Your cervical spine contains vertebral arteries and proprioceptive pathways. Instability or dysfunction here can affect blood flow to the brainstem AND send incorrect position signals to your brain. This is one of the most commonly missed contributors.</p>
+
+            <h3>How we find it</h3>
+            <p>Digital Motion X-ray (DMX) captures your cervical spine while you actually move. Static MRI misses dynamic problems — it only shows you at rest. Vascular testing may reveal positional flow changes that only happen in certain head positions.</p>
+
+            <h3>What it looks like</h3>
+            <p>Symptoms get worse in certain head positions. History of whiplash or neck trauma — even "minor" stuff you barely remember. Normal MRI but persistent symptoms that nobody can explain.</p>
+
+            <h3>What helps</h3>
+            <p>Cervical stabilization if instability is present. Proprioceptive retraining. Addressing the mechanical contributor that keeps re-triggering everything downstream.</p>
+
+            <h3>What doesn't help</h3>
+            <p>Ignoring the neck because the MRI was "normal." Treating only the downstream symptoms without looking at what's feeding them.</p>
+        </div>
+
+        <h2>These Mechanisms Overlap</h2>
+
+        <p>Most patients don't have just one mechanism. They have two, three, or all four interacting at the same time.</p>
+
+        <ul>
+            <li>Blood flow problems cause vestibular symptoms</li>
+            <li>Vestibular problems affect blood pressure regulation</li>
+            <li>Cerebellar dysfunction affects both</li>
+            <li>Neck problems can contribute to all of the above</li>
+        </ul>
+
+        <div class="guide-callout">
+            <p>The question isn't which ONE you have. It's which combination — and which to address first. This is exactly why "try this medication" or "do these exercises" hasn't worked.</p>
+        </div>
+
+        <h2>How to Start Figuring Out Your Mechanism</h2>
+
+        <h3>Look at what helps — and what doesn't</h3>
+
+        <table class="guide-table">
+            <thead>
+                <tr>
+                    <th>If This Helps</th>
+                    <th>Suspect This Mechanism</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Salt / water / compression</td>
+                    <td>Blood flow (#1)</td>
+                </tr>
+                <tr>
+                    <td>Lying down</td>
+                    <td>Blood flow + possibly vestibular (#1, #2)</td>
+                </tr>
+                <tr>
+                    <td>Eyes closed</td>
+                    <td>Vestibular mismatch (#2)</td>
+                </tr>
+                <tr>
+                    <td>Avoiding busy environments</td>
+                    <td>Vestibular + cerebellar (#2, #3)</td>
+                </tr>
+                <tr>
+                    <td>Nothing seems to help</td>
+                    <td>Multiple mechanisms or wrong approach</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Look at your history</h3>
+
+        <ul>
+            <li>Symptoms started after a viral illness — often vestibular + autonomic (#2 + #1)</li>
+            <li>Symptoms started after a concussion — often cerebellar + vestibular (#3 + #2)</li>
+            <li>Symptoms started after neck trauma — consider cervical contribution (#4)</li>
+            <li>Symptoms started gradually, no clear trigger — may be multiple subtle mechanisms</li>
+        </ul>
+
+        <h3>Get proper testing</h3>
+
+        <p>Not just a tilt table with heart rate. Comprehensive testing means:</p>
+
+        <ul>
+            <li>TCD during tilt (blood flow to the brain)</li>
+            <li>VNG with caloric testing (vestibular function)</li>
+            <li>Oculomotor assessment (cerebellar calibration)</li>
+            <li>Dynamic imaging if cervical contribution is suspected</li>
+        </ul>
+
+        <h2>The Treatment Sequence Matters</h2>
+
+        <p>Even if you have all 4 mechanisms, you can't treat them all at once. The order matters:</p>
+
+        <div class="guide-sequence">
+            <ol>
+                <li><strong>Stabilize blood flow first</strong> — You can't do vestibular rehab if standing crashes you</li>
+                <li><strong>Address vestibular input</strong> — Clean up the signals coming in</li>
+                <li><strong>Retrain cerebellar processing</strong> — Improve how the brain uses those signals</li>
+                <li><strong>Build cardiovascular capacity</strong> — Add load once regulation is actually working</li>
+                <li><strong>Integrate with real-world challenges</strong> — Apply it to daily life</li>
+            </ol>
+        </div>
+
+        <p>Skip steps and you crash or plateau. Right sequence means compounding progress.</p>
+
+        <!-- CTA -->
+        <div class="guide-cta">
+            <h2>Ready to Find Your Mechanism?</h2>
+            <p>Book a free consultation call. We'll listen to your story and tell you honestly whether we can help — and if we can't, we'll tell you that too.</p>
+            <a href="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire" class="cta-button" target="_blank" rel="noopener">
+                Schedule a Free Consultation
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/logo.png" alt="The Keiser Clinic">
+                    <p>The Keiser Clinic provides advanced neurological care for complex conditions. We combine diagnostic precision with evidence-based treatment to help patients find answers and get better.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html">How This Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Conditions</h4>
+                    <ul>
+                        <li><a href="pots.html">POTS & Dysautonomia</a></li>
+                        <li><a href="services.html">Post-Concussion</a></li>
+                        <li><a href="services.html">Vestibular Disorders</a></li>
+                        <li><a href="services.html">Migraines</a></li>
+                        <li><a href="services.html">Balance Problems</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links footer-contact">
+                    <h4>Contact</h4>
+                    <p><a href="tel:+17347075105" style="color: var(--gold); text-decoration: none;">(734) 707-5105</a></p>
+                    <p>400 N Main St, Chelsea, MI 48118</p>
+                    <p><a href="mailto:info@drkeiser.com" style="color: var(--gold); text-decoration: none;">info@drkeiser.com</a></p>
+                    <p>Fax: 734-219-4841</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/thekeiserclinic" target="_blank" rel="noopener">
+                            <img src="../images/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://youtube.com/@dockeiser" target="_blank" rel="noopener">
+                            <img src="../images/youtube.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Keiser Clinic. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
