@@ -3,7 +3,11 @@
 [build]
   publish = "."
 
-# Redirects
+# ================================================================
+# REDIRECTS
+# ================================================================
+
+# --- Clean URL shortcuts (for marketing/sharing) ---
 [[redirects]]
   from = "/pots"
   to = "/pages/pots.html"
@@ -15,19 +19,9 @@
   status = 200
 
 [[redirects]]
-  from = "/consultation"
-  to = "https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire"
-  status = 301
-
-[[redirects]]
-  from = "/book"
-  to = "https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire"
-  status = 301
-
-[[redirects]]
-  from = "/schedule"
-  to = "https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire"
-  status = 301
+  from = "/blog"
+  to = "/pages/blog.html"
+  status = 200
 
 [[redirects]]
   from = "/about"
@@ -43,6 +37,84 @@
   from = "/services"
   to = "/pages/services.html"
   status = 200
+
+[[redirects]]
+  from = "/guide"
+  to = "/pages/why-nothing-has-worked.html"
+  status = 200
+
+# --- Booking shortcuts ---
+[[redirects]]
+  from = "/consultation"
+  to = "https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire"
+  status = 301
+
+[[redirects]]
+  from = "/book"
+  to = "https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire"
+  status = 301
+
+[[redirects]]
+  from = "/schedule"
+  to = "https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire"
+  status = 301
+
+# --- Old Webflow URL → New URL (301 permanent redirects) ---
+# These preserve SEO rankings and prevent broken links after migration
+
+# Contact page (old site had a form; new site uses Calendly)
+[[redirects]]
+  from = "/contact"
+  to = "/#cta"
+  status = 301
+
+# How This Works (old URL had no hyphen pattern)
+[[redirects]]
+  from = "/how-this-works"
+  to = "/pages/how-it-works.html"
+  status = 301
+
+# Individual service pages → best matching new page
+[[redirects]]
+  from = "/services/dysautonomia"
+  to = "/pages/pots.html"
+  status = 301
+
+[[redirects]]
+  from = "/services/brain-injury"
+  to = "/pages/services.html"
+  status = 301
+
+[[redirects]]
+  from = "/services/balance-problems-and-dizziness"
+  to = "/pages/services.html"
+  status = 301
+
+[[redirects]]
+  from = "/services/chronic-pain-and-migraine"
+  to = "/pages/services.html"
+  status = 301
+
+[[redirects]]
+  from = "/services/movement-disorders"
+  to = "/pages/services.html"
+  status = 301
+
+[[redirects]]
+  from = "/services/neurodevelopmental-disorders"
+  to = "/pages/services.html"
+  status = 301
+
+# Old blog post
+[[redirects]]
+  from = "/post/decoding-concussion-the-six-eye-movements-that-unveil-brain-dysfunction"
+  to = "/pages/eye-movements-brain.html"
+  status = 301
+
+[[redirects]]
+  from = "/post/*"
+  to = "/pages/blog.html"
+  status = 301
 
 # Headers for security and performance
 [[headers]]
