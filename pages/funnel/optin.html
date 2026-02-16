@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free guide: Why Nothing Has Worked Yet — the 4 mechanisms your doctors aren't testing for. Get instant access.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:title" content="Why Nothing Has Worked Yet | Free Guide">
+    <meta property="og:description" content="The 4 mechanisms your doctors aren't testing for — and how to find which one is keeping you sick.">
+    <meta property="og:image" content="https://keiserclinic.netlify.app/images/team-photo.jpg">
+    <title>Get the Free Guide | The Keiser Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" type="image/png" href="../../images/logo.png">
+    <style>
+        .funnel-hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: var(--black);
+            color: var(--white);
+            padding: 120px 20px 60px;
+        }
+        .funnel-layout {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .funnel-copy h1 {
+            color: var(--white);
+            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .funnel-copy h1 span { color: var(--gold); }
+        .funnel-copy .subtitle {
+            font-size: 18px;
+            color: rgba(255,255,255,0.75);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .funnel-bullets {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px;
+        }
+        .funnel-bullets li {
+            font-size: 16px;
+            color: rgba(255,255,255,0.85);
+            padding: 8px 0 8px 30px;
+            position: relative;
+            line-height: 1.5;
+        }
+        .funnel-bullets li::before {
+            content: "\2713";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+        .funnel-form-wrap {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 10px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .funnel-form-wrap iframe {
+            width: 100%;
+            min-height: 500px;
+            border: none;
+            border-radius: 8px;
+        }
+        .trust-bar {
+            text-align: center;
+            padding: 20px;
+            color: rgba(255,255,255,0.5);
+            font-size: 13px;
+        }
+        @media (max-width: 768px) {
+            .funnel-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .funnel-hero { padding-top: 100px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Minimal Header -->
+    <header class="header" id="header" style="background: var(--black);">
+        <nav class="nav container" style="justify-content: center;">
+            <a href="../../index.html" class="logo">
+                <img src="../../images/logo.png" alt="The Keiser Clinic">
+            </a>
+        </nav>
+    </header>
+
+    <section class="funnel-hero">
+        <div class="funnel-layout">
+            <div class="funnel-copy">
+                <h1>Why Nothing Has <span>Worked Yet</span></h1>
+                <p class="subtitle">Get the free guide that reveals the 4 mechanisms your doctors aren't testing for &mdash; and how to find which one is keeping you sick.</p>
+                <ul class="funnel-bullets">
+                    <li>Why your diagnosis is a description, not an explanation</li>
+                    <li>The 4 mechanisms behind POTS, dysautonomia, and chronic dizziness</li>
+                    <li>What to look for in your own symptom pattern</li>
+                    <li>The correct treatment sequence (order matters)</li>
+                    <li>How to get proper testing that actually finds answers</li>
+                </ul>
+                <p class="trust-bar">Patients from 48 states and 9 countries</p>
+            </div>
+            <div class="funnel-form-wrap">
+                <!-- JotForm Consultation Request — HIPAA-compliant -->
+                <iframe
+                    id="JotFormIFrame-260465422080147"
+                    title="Request a Consultation"
+                    src="https://hipaa.jotform.com/260465422080147"
+                    scrolling="no"
+                    allowfullscreen
+                    allow="geolocation; microphone; camera; fullscreen"
+                >
+                </iframe>
+                <script>
+                    // Auto-resize JotForm iframe
+                    window.addEventListener('message', function(e) {
+                        if (typeof e.data === 'object') return;
+                        var args = e.data.split(':');
+                        if (args.length > 2) {
+                            var iframe = document.getElementById('JotFormIFrame-' + args[args.length - 1]);
+                            if (iframe && args[0] === 'setHeight') {
+                                iframe.style.height = args[1] + 'px';
+                            }
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

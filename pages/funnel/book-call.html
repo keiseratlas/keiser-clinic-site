@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a free 15-minute discovery call with The Keiser Clinic. We'll listen to your story and tell you if we can help.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Book a Discovery Call | The Keiser Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" type="image/png" href="../../images/logo.png">
+    <style>
+        .book-hero {
+            padding: 140px 20px 40px;
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+        }
+        .book-hero h1 {
+            color: var(--white);
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+            margin-bottom: 12px;
+        }
+        .book-hero h1 span { color: var(--gold); }
+        .book-hero p {
+            font-size: 17px;
+            color: rgba(255,255,255,0.7);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .book-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+        .book-info h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .book-info p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        .expect-list {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0;
+        }
+        .expect-list li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+            font-size: 15px;
+            color: #444;
+            border-bottom: 1px solid #eee;
+        }
+        .expect-list li::before {
+            content: "\2713";
+            position: absolute;
+            left: 0;
+            color: var(--gold-dark);
+            font-weight: 700;
+        }
+        .expect-list li:last-child { border: none; }
+        .no-pressure {
+            background: var(--light-gray);
+            border-left: 4px solid var(--gold);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 25px;
+        }
+        .no-pressure p {
+            margin: 0;
+            font-size: 15px;
+            font-style: italic;
+            color: #555;
+        }
+        .book-form iframe {
+            width: 100%;
+            min-height: 650px;
+            border: none;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .book-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Minimal Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../../index.html" class="logo">
+                <img src="../../images/logo.png" alt="The Keiser Clinic">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../how-it-works.html">How This Works</a>
+                <a href="../faq.html">FAQ</a>
+                <a href="tel:+17347075105" class="nav-phone">(734) 707-5105</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="book-hero">
+        <h1>Book Your Free <span>Discovery Call</span></h1>
+        <p>15 minutes. No pressure. We'll listen to your story and tell you honestly whether we can help.</p>
+    </section>
+
+    <section class="book-content">
+        <div class="book-info">
+            <h2>What to Expect</h2>
+            <p>A discovery call is a quick conversation to understand your situation and see if our approach makes sense for you.</p>
+
+            <ul class="expect-list">
+                <li>15-20 minutes by phone or video</li>
+                <li>Tell us about your symptoms and what you've tried</li>
+                <li>We'll explain our approach and what testing would look like</li>
+                <li>Ask any questions you have</li>
+                <li>Get an honest answer about whether we can help</li>
+            </ul>
+
+            <div class="no-pressure">
+                <p>"If we can't help you, we'll tell you that — and we'll try to point you toward someone who can."<br>— Dr. Keiser</p>
+            </div>
+        </div>
+
+        <div class="book-form">
+            <!-- JotForm Discovery Call Booking — HIPAA-compliant -->
+            <iframe
+                id="JotFormIFrame-260466618979172"
+                title="Discovery Call Booking"
+                src="https://hipaa.jotform.com/260466618979172"
+                scrolling="no"
+                allowfullscreen
+                allow="geolocation; microphone; camera; fullscreen"
+            >
+            </iframe>
+            <script>
+                window.addEventListener('message', function(e) {
+                    if (typeof e.data === 'object') return;
+                    var args = e.data.split(':');
+                    if (args.length > 2) {
+                        var iframe = document.getElementById('JotFormIFrame-' + args[args.length - 1]);
+                        if (iframe && args[0] === 'setHeight') {
+                            iframe.style.height = args[1] + 'px';
+                        }
+                    }
+                });
+            </script>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Keiser Clinic. All rights reserved. | <a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
