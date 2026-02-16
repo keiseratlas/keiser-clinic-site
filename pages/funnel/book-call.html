@@ -31,11 +31,11 @@
             margin: 0 auto;
         }
         .book-content {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 50px 20px 80px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 300px 1fr;
             gap: 50px;
             align-items: start;
         }
@@ -82,11 +82,8 @@
             font-style: italic;
             color: #555;
         }
-        .book-form iframe {
-            width: 100%;
-            min-height: 650px;
-            border: none;
-            border-radius: 8px;
+        .calendly-wrap {
+            min-height: 700px;
         }
         @media (max-width: 768px) {
             .book-content {
@@ -95,9 +92,11 @@
             }
         }
     </style>
+    <!-- Calendly CSS -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Minimal Header -->
+    <!-- Header -->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="../../index.html" class="logo">
@@ -116,7 +115,7 @@
 
     <section class="book-hero">
         <h1>Book Your Free <span>Discovery Call</span></h1>
-        <p>15 minutes. No pressure. We'll listen to your story and tell you honestly whether we can help.</p>
+        <p>15 minutes. No pressure. Pick a time that works for you.</p>
     </section>
 
     <section class="book-content">
@@ -125,9 +124,9 @@
             <p>A discovery call is a quick conversation to understand your situation and see if our approach makes sense for you.</p>
 
             <ul class="expect-list">
-                <li>15-20 minutes by phone or video</li>
+                <li>15-20 minutes by phone</li>
                 <li>Tell us about your symptoms and what you've tried</li>
-                <li>We'll explain our approach and what testing would look like</li>
+                <li>We'll explain our approach</li>
                 <li>Ask any questions you have</li>
                 <li>Get an honest answer about whether we can help</li>
             </ul>
@@ -137,29 +136,10 @@
             </div>
         </div>
 
-        <div class="book-form">
-            <!-- JotForm Discovery Call Booking — HIPAA-compliant -->
-            <iframe
-                id="JotFormIFrame-260466618979172"
-                title="Discovery Call Booking"
-                src="https://hipaa.jotform.com/260466618979172"
-                scrolling="no"
-                allowfullscreen
-                allow="geolocation; microphone; camera; fullscreen"
-            >
-            </iframe>
-            <script>
-                window.addEventListener('message', function(e) {
-                    if (typeof e.data === 'object') return;
-                    var args = e.data.split(':');
-                    if (args.length > 2) {
-                        var iframe = document.getElementById('JotFormIFrame-' + args[args.length - 1]);
-                        if (iframe && args[0] === 'setHeight') {
-                            iframe.style.height = args[1] + 'px';
-                        }
-                    }
-                });
-            </script>
+        <div class="calendly-wrap">
+            <!-- Calendly inline widget -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/phoneconsultwithdrclaire/phone-consultation-with-dr-claire?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         </div>
     </section>
 
